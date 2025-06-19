@@ -1,0 +1,15 @@
+controller:
+  admin:
+    username: admin
+    password: admin
+  installPlugins:
+    - kubernetes
+    - workflow-aggregator
+    - git
+    - configuration-as-code
+  serviceType: NodePort
+  sidecars:
+    configAutoReload:
+      enabled: false
+  JCasC:
+    enabled: false
